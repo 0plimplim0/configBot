@@ -1,4 +1,4 @@
-# ConfigBot [Nombre en proceso]
+# ConfigBot [Nombre pendiente]
 
 ## Descripcion
 
