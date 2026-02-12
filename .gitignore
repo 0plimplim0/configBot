@@ -1,5 +1,5 @@
 .venv/
 .env
-*.txt
 __pycache__
-database.sqlite
+*.sqlite
+docs/*.txt

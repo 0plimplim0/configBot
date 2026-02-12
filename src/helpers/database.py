@@ -1,8 +1,18 @@
 import sqlite3
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
+DB_PATH = BASE_DIR / 'data' / 'database.sqlite'
+SCHEMA_PATH = BASE_DIR / 'data' / 'schema.sql'
 
 def initDb():
-    connection = sqlite3.connect('database.sqlite')
-    with open('schema.sql', 'r') as schema:
+    print(f"Buscando base de datos en: {DB_PATH}")
+    print(f"Buscando schema en: {SCHEMA_PATH}")
+    DB_PATH.parent.mkdir(parents=True, exist_ok=True)
+
+    connection = sqlite3.connect(DB_PATH)
+    
+    with open(SCHEMA_PATH, 'r') as schema:
         connection.executescript(schema.read())
     connection.commit()
     connection.close()
@@ -24,7 +34,7 @@ def get_prefix(bot, message):
         
 
 def get_connection():
-    return sqlite3.connect('database.sqlite')
+    return sqlite3.connect(DB_PATH)
 
 def set_prefix(guild_id, prefix):
     conn = get_connection()

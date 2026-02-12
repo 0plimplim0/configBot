@@ -24,6 +24,7 @@ async def main():
     async with bot:
         await bot.load_extension('cogs.utility')
         await bot.load_extension('cogs.config')
+        await bot.load_extension('cogs.errorHandler')
         await bot.start(os.getenv('BOT_TOKEN'))
 
 try:
