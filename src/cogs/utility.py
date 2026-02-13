@@ -7,7 +7,8 @@ class Utility(commands.Cog):
 
     @commands.command()
     async def ping(self, ctx):
-        await ctx.send('Pong!')
+        ms_latency = round(self.bot.latency * 1000)
+        await ctx.send(f'🏓 ¡Pong! Latencia del WebSocket: {ms_latency}ms')
     
     @commands.command()
     async def prefix(self, ctx):
