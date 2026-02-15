@@ -1,5 +1,5 @@
 # Lattice 
-![Static Badge](https://img.shields.io/badge/Status-Pausado-red) ![Static Badge](https://img.shields.io/badge/Lenguaje-Python-blue) ![License](https://img.shields.io)
+![Static Badge](https://img.shields.io/badge/Status-Pausado-red) ![Static Badge](https://img.shields.io/badge/Lenguaje-Python-blue) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Bot de discord con un sistema de permisos granular, basado en modulos.
 
