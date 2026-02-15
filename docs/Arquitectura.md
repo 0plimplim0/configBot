@@ -9,6 +9,7 @@
 │   │   ├── __init__.py
 │   │   ├── config.py
 │   │   ├── moderation.py
+|   |   ├── errorHandler.py
 │   │   └── utility.py
 │   ├── helpers/
 │   │   │── __init__.py

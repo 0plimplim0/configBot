@@ -4,7 +4,16 @@
 
 Bot modular de administración con sistema de permisos granular y configuración persistente por servidor.
 
-## Stack
-- Python (discord.py)
-- Sqlite (MVP) -> Postgre (Final)
-- SQLAlchemy ORM
+## Comandos
+
+**Moderation**
+- clear
+**Config**
+- setprefix
+**Utility**
+- ping
+- prefix
+- userinfo
+- avatar
+- serverinfo
+- help

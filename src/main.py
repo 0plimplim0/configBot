@@ -10,10 +10,12 @@ database.initDb()
 
 intents = discord.Intents.default()
 intents.message_content = True
+intents.members = True
 
 bot = commands.Bot(
     intents=intents,
-    command_prefix=database.get_prefix
+    command_prefix=database.get_prefix,
+    help_command=None
 )
 
 @bot.event
@@ -25,6 +27,7 @@ async def main():
         await bot.load_extension('cogs.utility')
         await bot.load_extension('cogs.config')
         await bot.load_extension('cogs.errorHandler')
+        await bot.load_extension('cogs.moderation')
         await bot.start(os.getenv('BOT_TOKEN'))
 
 try:
