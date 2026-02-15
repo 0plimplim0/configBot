@@ -74,7 +74,7 @@ class Utility(commands.Cog):
             > **TOTAL** | {ctx.guild.member_count}
             > **HUMANOS** | {len([m for m in ctx.guild.members if not m.bot])}
             > **BOTS** | {len([m for m in ctx.guild.members if m.bot])}
-            > **BOOSTS** | Tier {ctx.guild.premium_tier} ({ctx.guild.premium_subscription_count} mejoras) 💎
+            > **BOOSTS** | Tier {ctx.guild.premium_tier} ({ctx.guild.premium_subscription_count} mejoras)
             ### 📂 INFRAESTRUCTURA
             > **CANALES** | {len(ctx.guild.channels)} (💬 {len(ctx.guild.text_channels)} | 🔊 {len(ctx.guild.voice_channels)} | 📢 {len(ctx.guild.stage_channels)})
             > **ROLES** | {len(ctx.guild.roles) - 1}
